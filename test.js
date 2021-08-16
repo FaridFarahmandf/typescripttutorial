@@ -1,25 +1,14 @@
-var x = 10;
-/*when you declare a variable , you can not change the data type when you asign it again*/
-//  x = "Farid"
-/*use this code in cmd for
-compiling everytime you changed sth :
-tsc yourTSfilename.ts -w*/
-//1.Array
-//1.1 - when you declare the array all your inputs takes the first data type of declaration
-var list1 = [1, 2, 3, 4];
-list1.push(5, 6, 7 /*,"a"*/);
-//1.2 - just data type that used in first declaration 
-var list2 = [1, 2, "a", "b"];
-list2.push(3, 4, 'c', 'd' /*,true*/);
-//2.Object
-//2.1 - this way you can not control on the properties and methods
-var person = {
-    name: 'Farid',
-    age: 24
-};
-// person.firstName = "Rouzbeh" ** don't let you use other properties and show your mistakes ;
-var vehicle;
-// vehicle.car = "BMW" ;
-// vehicle.motorCycle = "YAMAHA" ;
-vehicle = { car: "BMW", motorCycle: "YAMAHA" };
-console.log(vehicle);
+//how using data types => :number , :boolean , : object , ... or :any
+var uid;
+uid = 10;
+uid = 23;
+// uid = "six" ;
+var list1 = [];
+list1 = [{ name: "farid", age: 24 }, { name: "Rozhan", age: 25 } /*, "shayan"*/];
+// "|" we called it "union" and whenever we use it we can have different datatypes
+var list2;
+list2 = [1, 2, 3, 4, 'a', 'b', 'c', 'd' /*,true*/];
+// we can use union everywhere
+var id;
+id = 929491;
+id = "f9fax35@";
