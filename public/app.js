@@ -1,4 +1,6 @@
 //interface
+import { Basket } from "./classes/basket.js";
+import { OnlineShop } from "./classes/online.js";
 const person1 = {
     firstName: "Farid",
     lastName: "Farahmand",
@@ -39,4 +41,10 @@ const firstGrocery = {
 };
 console.log(firstGrocery.expired(3));
 console.log(new Date());
-export {};
+//*************************************
+let firstProduct;
+let secondProduct;
+firstProduct = new Basket("Kale Susage", 40000, 100);
+secondProduct = new OnlineShop("Mihan Cream", 16000, 101);
+console.log(firstProduct.finalPrice());
+console.log(secondProduct.finalPrice());

@@ -1,5 +1,9 @@
 //interface
 
+import { Basket } from "./classes/basket.js";
+import { OnlineShop } from "./classes/online.js";
+import { PriceOfProducts } from "./interface/GroceriesPrice.js";
+
 interface Person {
   firstName:string ,
   lastName:string ,
@@ -58,3 +62,12 @@ const firstGrocery:Grorceries = {
 }
 console.log(firstGrocery.expired(3));
 console.log(new Date())
+
+//*************************************
+let firstProduct : PriceOfProducts;
+let secondProduct : PriceOfProducts;
+firstProduct = new Basket("Kale Susage",40000,100);
+secondProduct = new OnlineShop("Mihan Cream",16000,101);
+console.log(firstProduct.finalPrice());
+console.log(secondProduct.finalPrice());
+
